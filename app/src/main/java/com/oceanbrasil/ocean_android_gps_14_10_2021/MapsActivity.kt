@@ -42,6 +42,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         val saoPaulo = LatLng(-23.560435856269656, -46.65604399575318)
         mMap.addMarker(MarkerOptions().position(saoPaulo).title("MASP"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(saoPaulo))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(saoPaulo, 16.25f))
     }
 }
